@@ -1,1 +1,1 @@
-Earthquakes
+In this project we are going study a dataset of earthquakes occurred in a time window of almost 30 years in South California. The catalog includes the magnitude, time of occurrence (s), and 3D coordinates (m) of each earthquakes.
