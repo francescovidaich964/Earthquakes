@@ -753,13 +753,13 @@ def plot_PmR_t(df, m, U, Rs, n=100, verbose=True, **kwargs):
     # centering and rescaling the coordinates
     for i in range(3):
         X[i] = (X[i] - X[i].mean())/X[i].std()
-
+    
     distances = np.linalg.norm((X.T[:,np.newaxis,:] - centers[np.newaxis,:,:]), axis=2)
     #print("Max distance uning centered and rescaled coordinates: ", round(distances.max(),2))
     distances = distances / distances.max()
     timem = np.array(dfm['time'])
     timeM = np.tile(timem[:, np.newaxis], [1,n]).T
-
+ 
     #vector for fit parameters for each R_max fraction
     ps = []
     qs = []
@@ -770,8 +770,6 @@ def plot_PmR_t(df, m, U, Rs, n=100, verbose=True, **kwargs):
         #print(timeM.shape)
 
         timeM_filtered = timeM[distances.T < Rs[i]]
-        #print(timeM.shape)
-        #print(distances.T.shape)
         time_d = (timeM_filtered[1:] - timeM_filtered[:-1])
         time_d = time_d[time_d>0]
 
