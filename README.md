@@ -12,7 +12,7 @@ Main investigation: to study how the waiting time distribution between two conse
 
 **Main achievement**: detected waiting-time scaling property (and critical exponent) w.r.t. the magnitude threshold above which the earthquakes are considered. 
 
-**More in depth**
+**More in depth** <br>
 The scaling phenomenon happens if two conditions are verified:
 * the system is scale-free, i.e. it doesn't have any characteristic scale in the distribution of a given quantity, except a "correlation length" (that for example for the waiting times is given by the cutoff time);
 * the exponent of the distribution is the same for all distributions.
