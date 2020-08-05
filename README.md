@@ -1,4 +1,6 @@
 ## Earthquakes data analysis
+Made by Nicola Dainese, Stefano Mancone, Francesco Vidaich
+
 
 In this project we are going study a dataset of earthquakes occurred in a time window of almost 30 years in South California. The catalog includes the magnitude, time of occurrence (s), and 3D coordinates (m) of each earthquake.
 
@@ -20,3 +22,9 @@ More in concrete, if we have a distribution of a variable <img src="https://rend
 In this way we obtain a unique powerlaw with critical exponent <img src="https://render.githubusercontent.com/render/math?math=\delta"> with a cutoff independent from the <img src="https://render.githubusercontent.com/render/math?math=y">. 
 
 <img src='Supplementary material/time-scaling.png' >
+
+Contacts:
+
+nicola.dainese96@gmail.com <br>
+stefanomancone915@gmail.com <br>
+francescovidaich@gmail.com <br>
