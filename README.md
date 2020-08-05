@@ -9,3 +9,14 @@ Module with all codes: Earthquakes.py
 Main investigation: to study how the waiting time distribution between two consecutive earthquakes depends on the minimum magnitude considered (e.g. if we consider only earthquakes of magnitude 5 or greater we expect to wait longer times between two events, but how much longer than for example if we consider those of magnitude 4 or greater?).
 
 **Main achievement**: detected waiting-time scaling property (and critical exponent) w.r.t. the magnitude threshold above which the earthquakes are considered. 
+
+**More in depth**
+The scaling phenomenon happens if two conditions are verified:
+* the system is scale-free, i.e. it doesn't have any characteristic scale in the distribution of a given quantity, except a "correlation length" (that for example for the waiting times is given by the cutoff time);
+* the exponent of the distribution is the same for all distributions.
+
+More in concrete, if we have a distribution of a variable $\mathbf{x}$ (waiting time or distance) which scales in another variable $y$ (magnitude threshold or area of observation), to obtain the rescaled distribution $P(z)$ from $P_y(\mathbf{x}) = \mathbf{x}^{\delta} \cdot f(\mathbf{x}/\mathbf{x}_{cut}(y))$ we have to divide $\mathbf{x}$ for $\mathbf{x}_{cut}$ and multiply $P_y(\mathbf{x})$ for $\mathbf{x}_{cut}(y)$  (so that the distribution remains normalized).
+
+In this way we obtain a unique powerlaw with critical exponent $\delta$ with a cutoff independent from the $y$. 
+
+<img src='Supplementary material/time-scaling.png' >
